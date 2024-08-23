@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100%;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+h1, h2, h5, p {
+    margin: 0;
+
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.5rem;
+}
+
+#hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#hero__animation {
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    height: 25rem;
+    width: 25rem;
+    max-height: 100vh;
+    max-width: 100vh;
+}
+
+#grid {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#hero__animation__img {
+    background-image: var(--tl-1);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+/*GRID COMMON STYLES*/
+
+#grid__tl__btn,
+#grid__tr__btn,
+#grid__bl__btn,
+#grid__br__btn {
+    height: 18.75rem;
+    width: 18.75rem;
+    background: var(--bg);
+    color: var(--text);
+    border: var(--border);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    z-index: 100;
+    border-radius: 40%;
+    transition: transform 0.2s ease-in-out;
+}
+
+#grid__tl__content,
+#grid__tr__content,
+#grid__bl__content,
+#grid__br__content {
+    position: absolute;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--text-alt);
+}
+
+#grid__tl__btn,
+#grid__tr__btn{
+    padding-bottom: 0.5rem;
+    align-items: flex-end;
+}
+
+#grid__bl__btn,
+#grid__br__btn{
+    padding-bottom: 0.5rem;
+    align-items: flex-end;
+}
+
+#grid__tl__btn:active,
+#grid__tr__btn:active
+{
+transform: rotate(-45deg) scale(1.05);
+}
+
+#grid__bl__btn:active,
+#grid__br__btn:active
+{
+    transform: rotate(-45deg) scale(1.05);
+}
+
+/*TOP LEFT CORNER*/
+
+#grid__tl__btn {
+    top:-11.5rem;
+    left:-11.5rem;
+    transform: rotate(-45deg);
+}
+
+#grid__tl__content {
+    width: 30vw;
+    top: 10vh;
+    left: 0;
+    transform: translateX(-100vw) translateY(-100vh);
+
+}
+
+article {
+    background: rgb(245 245 245);
+    font-size: 0.8rem;
+    list-style: none;
+    border: var(--border);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 8.75rem;
+    min-width: 8.75rem;
+}
+
+article h2{
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+article p {
+    padding-bottom: 0.3rem;
+}
+
+article h2,
+article p {
+    color: #333;
+}
+
+.cards {
+    padding: 0;
+}
+
+.cards__content {
+    display: flex;
+    align-items: center;
+}
+
+.cards__content__text {
+    color: var(--text);
+    text-align: left;
+    margin: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
